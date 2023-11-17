@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aim Training</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style type="text/css">
+    body {
+        margin: 0
+    }
+    canvas {
+        background-color: rgb(69, 68, 67);
+        cursor: crosshair;
+    }
+    .canvas_label {
+      position: absolute;
+      font-size: 15px;
+      font-weight: bold;
+      color: whitesmoke;
+      padding: 10px;
+      cursor: crosshair;
+    }
+
+    #timer {
+      top: 10px; /* top */
+      left: 15px; /* center */
+    }
+
+    #score {
+      top: 10px; /* top */
+      right: 15px; /* right  */
+    }
+  </style>
+</head>
+<body>
+  <!-- Canvas -->
+    <canvas id="canvas" style="position: relative;">
+        Your browser doesn't support Canvas.
+    </canvas>
+    <p id="timer" class="canvas_label">0s</p>
+    <p id="score" class="canvas_label">Score: 0</p>
+
+    <noscript>Your browser does not support Javascript or have Javascript enabled.</noscript>
+    <script src="./main.js"></script>
+</body>
+</html>
